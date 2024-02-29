@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        html{
+        background-color:#0a1536;
+        }
+              
+        .section{
+            display: flex;
+            border:3px solid black;
+            border-radius: 20px;
+            width: 25%;
+            margin:  100px auto;
+            padding: 20px;
+            align-content: center;
+            background-color: white;
+           
+
+        }
+        .heading{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .b1ox{
+            padding-top: 5px;
+            height: 20px;
+            width: 100%;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(206, 196, 185);
+        }
+        select{
+            padding-top: 5px;
+            width: 100%;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(206, 196, 185);
+        }
+        button:hover{
+            zoom:105%;
+            background-color: black;
+            color: white;
+        }
+        .b1ox:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <section class="section">
+        <form action="get">
+            <h1 class="heading">Book your Free Demo Class</h1>
+            <div class="row" >
+                <form action="get" class="form">
+                    <div style="display: flex;">                   
+                        <input type="text" placeholder="Name*" class="b1ox" required>
+                    </div>
+                    <div style="display: flex;">                    
+                        <input type="email" placeholder="Official Email ID*" class="b1ox" required>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="tel" placeholder="Mobile Number*" class="b1ox" required>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="text" placeholder="Collage/University*" class="b1ox" required>
+                    </div>
+                    <select name="designation" name="designation" class="desigination" required >
+                        <option value>Designation*</option>
+                        <option value="Teaching faculty">Teaching faculty</option>
+                        <option value="Dean">Dean</option>
+                        <option value="Director">Director</option>
+                        <option value="CEO">CEO</option>
+                        <option value="Founder">Founder</option>
+                        <option value="Principal">Principal</option>
+                        <option value="Administrator">Administrator</option>
+                        <option value="Owner">Owner</option>
+                        <option value="Co-owner">Co-owner</option>
+                        <option value="Founder">Founder</option>
+                        <option value="Vice President">Vice President</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="University Registrar">University Registrar</option>
+                        <option value="Academic Dean">Academic Dean</option>
+                        <option value="President">President</option>
+                        <option value="Executive Director">Executive Director</option>
+                        <option value="Student">Student</option>
+                    </select>
+                    <div>
+                        <p>Would you like to book your Demo with coginition. </p>
+                        <input type="radio" id="Yes" name="yes" value="yes">
+                        <label for="yes" class="yes_no">Yes</label>
+                        <input type="radio" id="No" name="no" value="no" >
+                        <label for="no" class="yes_no">No</label>
+                        
+                    </div>
+                    <div>
+                        <button type="submit" class="btn1" value="Submit">SUBMIT</button>
+                    </div>                    
+                </form>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
